@@ -37,16 +37,22 @@ app.get("/home", (req, res) => {
   res.render(index.html);
 });
 
+bar = 0;
+
 app.post("/home", async (req, res, next) => {
   const { yourname, youremail, yoursubject, yourmessage } = req.body;
-  try {
+  kiko: try {
     await mainMail(yourname, youremail, yoursubject, yourmessage);
-
-    setTimeout(function(){
-      return;
-    }, 10000)
+    
+    if (bar == 0){
+      break kiko;
+    }
+    
   } catch (error) {
     console.log(error);
+  }
+  finally{
+    console.log('code executed');
   }
 });
 
