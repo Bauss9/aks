@@ -42,6 +42,9 @@ app.post("/home", async (req, res, next) => {
   try {
     await mainMail(yourname, youremail, yoursubject, yourmessage);
 
+    setTimeout(function(){
+      return;
+    }, 10000)
   } catch (error) {
     console.log(error);
   }
