@@ -41,10 +41,10 @@ app.post("/home", async (req, res, next) => {
   const { yourname, youremail, yoursubject, yourmessage } = req.body;
   try {
     await mainMail(yourname, youremail, yoursubject, yourmessage);
-    
+
   } catch (error) {
     console.log(error);
   }
 });
 
-app.listen(3000, () => console.log("Server is running!"));
+app.listen(process.env.PORT || 3000, () => console.log("Server is running!"));
