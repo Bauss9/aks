@@ -8,6 +8,7 @@
     <meta name="dienstleistung" content="Dienstleistungen für Fensterreinigung, Immobilienvermittlung, Objektbetreuung und Hausmeisterservice">
     <title>AKS Immobilienmakler</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logoschwarz.jpeg" type="image/x-icon">
     <script src="script.js"></script>
     <link href="https://use.typekit.net/emv3zbo.css" rel="stylesheet" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/abfd03e305.js" crossorigin="anonymous"></script>
@@ -21,6 +22,42 @@
 <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="loader">
+        <div class="loader-inner">
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+        </div>
+      </div>
+
+<div class="openscene">
+    <div class="opennavbar">
+        <div class="navbarcontent">
+            <a href="#">Über uns</a>
+            <a href="#">Dienste</a>
+            <a href="#">Kontakt</a>
+        </div>
+
+        <div class="socials">
+            <i class="fa-brands fa-facebook-f hoverf">
+                <i class="fa-brands fa-facebook-f hoverfc"></i>
+            </i>
+            <i class="fa-brands fa-instagram hoverin">
+                <i class="fa-brands fa-instagram hoveric"></i>
+            </i>
+            <i class="fa-brands fa-whatsapp hoverwa">
+                <i class="fa-brands fa-whatsapp hoverwc"></i>
+            </i>
+        </div>
+        
+    </div>
+
     <div class="bg">
         <div class="bg-bottom">
             <div class="bg-bottom-social disable">
@@ -37,7 +74,7 @@
             </div>
         </div>
         <div class="navbarz">
-            <div class="menuicon">
+            <div class="menuicon" onclick="openbar()">
                 <div class="dots1">
                 <div class="dot"></div>
                 <div class="dot"></div>
@@ -374,7 +411,7 @@
             </div>
             
         </div>
-        <div class="kontakt-cont">
+        <div class="kontakt-cont" style="margin-top: 25px">
             <div class="kontakt-input" style="height: 100%;">
                 <textarea name="yourmessage" type="text" class="teleinput"  required style="height: 100%;"></textarea>
                 <div class="kontakt-placeholder2">Ihre Nachricht an uns</div>
@@ -382,7 +419,7 @@
         </div>
         <div class="sendbutton2">
             <div class="sendbuttonz">
-                ABSENDEN <input type="submit" value="Send" required>
+                ABSENDEN <input type="submit" value="" onclick="submitMail()" required>
             </div>
 
         </div>
@@ -430,6 +467,7 @@
                 © 2022 AKS Immobilien
             </div>
         </div>
+    </div>
     </div>
 </body>
 

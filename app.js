@@ -23,7 +23,7 @@ async function mainMail(name, email, subject, message) {
     html: `<br><br>Du hast eine neue Nachricht von: <br><br>
     Email: ${email}
     <br><br>Name: ${name}
-    <br><br>Message: ${message}`,
+    <br><br>Nachricht: ${message}`,
   };
   try {
     await transporter.sendMail(mailOption);
@@ -41,18 +41,16 @@ bar = 0;
 
 app.post("/home", async (req, res, next) => {
   const { yourname, youremail, yoursubject, yourmessage } = req.body;
-  kiko: try {
+   try {
     await mainMail(yourname, youremail, yoursubject, yourmessage);
-    
-    if (bar == 0){
-      break kiko;
-    }
+    return
     
   } catch (error) {
     console.log(error);
   }
   finally{
-    console.log('code executed');
+    return
+  
   }
 });
 

@@ -1,14 +1,63 @@
+window.addEventListener('load', function() {
+    setTimeout(function(){
+        document.getElementsByClassName('loader')[0].style.transform = 'translateY(-100%)';
+        document.getElementsByClassName('loader')[0].style.transition = '0.5s';
+        setTimeout(function(){
+            document.getElementsByClassName('loader')[0].style.display = 'none';
+            document.getElementsByClassName('openscene')[0].style.display = 'initial';
+        },500)
+    }, 1000)
+})
+
+baropened = 0;
+
 window.onscroll = function(e){
     console.log(window.pageYOffset);
 
-    if (window.pageYOffset >= 5 ){
+    if (window.pageYOffset >= 5){
         document.getElementsByClassName('navbarz')[0].style.backgroundColor = 'rgb(17, 16, 21)'
         document.getElementsByClassName('navbarz')[0].style.borderBottom = '1px solid rgba(50, 49, 49, 0.49)'
-    } else {
+    } else if (window.pageYOffset <= 5 && baropened == 0) {
         document.getElementsByClassName('navbarz')[0].style.backgroundColor = 'transparent'
         document.getElementsByClassName('navbarz')[0].style.borderBottom = 'none'
    
     }
+}
+
+
+
+
+function openbar(){
+
+    if (baropened == 0){
+    lowernav = document.getElementsByClassName('opennavbar')[0];
+
+    lowernav.style.width = '300px';
+    lowernav.style.opacity = '1';
+    lowernav.style.transition = '0.5s';
+    document.getElementsByClassName('navbarz')[0].style.backgroundColor = 'rgb(17, 16, 21)'
+    document.getElementsByClassName('navbarz')[0].style.borderBottom = '1px solid rgba(50, 49, 49, 0.49)'
+    baropened = 1;
+    } else if (baropened == 1 && window.pageYOffset >= 5){
+        lowernav.style.width = '0';
+        lowernav.style.opacity = '0';
+        lowernav.style.transition = '0.5s';
+        baropened = 0;
+    } else if (baropened == 1 && window.pageYOffset <= 5){
+        document.getElementsByClassName('navbarz')[0].style.backgroundColor = 'transparent'
+        document.getElementsByClassName('navbarz')[0].style.borderBottom = 'none'
+        lowernav.style.width = '0';
+        lowernav.style.opacity = '0';
+        lowernav.style.transition = '0.5s';
+        baropened = 0;
+    } else if (baropened == 0 && window.pageYOffset >= 5 ){
+
+    lowernav.style.width = '300px';
+    lowernav.style.opacity = '1';
+    lowernav.style.transition = '0.5s';
+    baropened = 1
+    }
+
 }
 
 window.onload = function(){
@@ -225,6 +274,9 @@ function closeVer(){
 function submitMail(){
  if(document.getElementsByClassName('teleinput')[0].value  !== '' && document.getElementsByClassName('teleinput')[1].value !== '' && document.getElementsByClassName('teleinput')[2].value !== '' && document.getElementsByClassName('teleinput')[3].value !== '' ){
    setTimeout(function() {
+    setTimeout(function(){
+        document.location.reload();
+    },3500)
     document.getElementsByClassName('successcont')[0].style.bottom = '25px'
     document.getElementsByClassName('successcont')[0].style.opacity = '1';
     document.getElementsByClassName('successcont')[0].style.transition = '0.5s';
