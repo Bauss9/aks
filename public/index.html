@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="immobilien" content="Ihr Ansprechspartner für alles rund um Ihren Objekt">
     <meta name="dienstleistung" content="Dienstleistungen für Fensterreinigung, Immobilienvermittlung, Objektbetreuung und Hausmeisterservice">
-    <title>AKS Immobilienmakler</title>
-    <link rel="stylesheet" href="style.css">
+    <title>AKS Immobiliendienstleistungen</title>
+    <link rel="stylesheet" href="stylezzz.css">
     <link rel="icon" href="img/logoschwarz.jpeg" type="image/x-icon">
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <link href="https://use.typekit.net/emv3zbo.css" rel="stylesheet" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/abfd03e305.js" crossorigin="anonymous"></script>
@@ -39,21 +43,21 @@
 <div class="openscene">
     <div class="opennavbar">
         <div class="navbarcontent">
-            <a href="#">Über uns</a>
-            <a href="#">Dienste</a>
-            <a href="#">Kontakt</a>
+            <a href="#" class="uberunsclick">Über uns</a>
+            <a href="#" class="dienstclick">Dienste</a>
+            <a href="#" class="beauftragen">Kontakt</a>
         </div>
 
         <div class="socials">
-            <i class="fa-brands fa-facebook-f hoverf">
+            <!--<a href="https://wa.me/015209184732"><i class="fa-brands fa-facebook-f hoverf">
                 <i class="fa-brands fa-facebook-f hoverfc"></i>
-            </i>
-            <i class="fa-brands fa-instagram hoverin">
+            </i></a>-->
+            <a href="https://www.instagram.com/aks.immobiliendienstleistungen/?igshid=YmMyMTA2M2Y%3D"><i class="fa-brands fa-instagram hoverin">
                 <i class="fa-brands fa-instagram hoveric"></i>
-            </i>
-            <i class="fa-brands fa-whatsapp hoverwa">
+            </i></a>
+            <a href="https://wa.me/015209184732"><i class="fa-brands fa-whatsapp hoverwa">
                 <i class="fa-brands fa-whatsapp hoverwc"></i>
-            </i>
+            </i></a>
         </div>
         
     </div>
@@ -70,7 +74,8 @@
             </div>
             <div class="bg-bottom-social">
                 <i class="fa-solid fa-phone"></i>
-                <span>0711 872 738</span>
+                <a style="text-decoration: none !important; color: white !important; font-weight: 400" href="Tel:+4915209184732">01520 918 4732</a>
+
             </div>
         </div>
         <div class="navbarz">
@@ -91,7 +96,7 @@
                 <div class="dot"></div>
                 </div>
             </div>
-            <img src="img/7bd6eb36-4757-4f8c-b7d0-c6b4e2a0b92f (1) (1).png" class="logo">
+            <a href="index.html"><img src="img/7bd6eb36-4757-4f8c-b7d0-c6b4e2a0b92f (1) (1).png" class="logo"></a>
             <!--<div class="socials">
                 <i class="fa-brands fa-facebook-f hoverf">
                     <i class="fa-brands fa-facebook-f hoverfc"></i>
@@ -104,15 +109,15 @@
                 </i>
             </div>-->
             <div class="lower">
-                <div class="jetztanrufen">KONTAKTIEREN</div>
+                <div class="jetztanrufen beauftragen">KONTAKTIEREN</div>
             </div>
         </div>
         <div class="bgg">
             <img src="img/bg.jpg" class="bgpic">
             <div class="bgg-hover"></div>
                 <div class="textcont">
-                    <span class="immobilie">Wir kümmern uns um Ihre Immobilien.</span>
-                    <div class="textcont-button">BEAUFTRAGEN</div>
+                    <span class="immobilie">Wir kümmern uns um Ihre Objekte.</span>
+                    <div class="textcont-button beauftragen">BEAUFTRAGEN</div>
                 </div>
         </div>
     </div>
@@ -126,10 +131,10 @@
                 <p class="js-scroll fade-in-bottom">„Schaffe, schaffe Häusle baue,” – für ihren Fleiß und die Liebe zur Immobilie sind die Schwaben bekannt.
                     Das schöne Mehrfamilienhaus ist endlich fertig. Die eigenen vier Wände stehn. Ein Traum wird war. Und was nun?
                     <br><br>
-                    Wir von der A-Z Objektbetreuung unterstützen Sie mit unserer professionellen Arbeit, unserer jahrelangen Erfahrung
+                    Wir von der AKS Objektbetreuung unterstützen Sie mit unserer professionellen Arbeit, unserer jahrelangen Erfahrung
                     und unserem Know-How, denn die Betreuung und Verwaltung eines Mehrfamilienhauses ist sehr vielschichtig.
                     <br><br>
-                    Damit Sie sich entspannen können kümmern wir uns von A-Z um Ihre Immobilie.
+                    Damit Sie sich entspannen können kümmern wir uns von AKS um Ihre Immobilie.
                     Wir begleiten Sie gerne langfristig – regional, fair, unabhängig und innovativ.</p>
             </div>
             <div class="uberuns-photos">
@@ -158,14 +163,14 @@
         <div class="number numberphone js-scroll fade-in-bottom">
             <i class="fa-solid fa-users"></i>
             <div class="number-cont">
-                <h2>800+</h2>
+                <h2>zufriedene</h2>
                 <h1>Kunden</h1>
             </div>
         </div>
         <div class="number numberbord numberphone2 js-scroll fade-in-bottom">
             <i class="fa-solid fa-building"></i>
             <div class="number-cont">
-                <h2>80+</h2>
+                <h2>zahlreiche</h2>
                 <h1>Objekte</h1>
             </div>
         </div>
@@ -185,39 +190,47 @@
         </div>
         <div class="dienstleistungen-cont">
             <div class='dienstleistung js-scroll fade-in-bottom'>
-                <h2>01</h2>
+                <h2 style="display: none">01</h2>
                 <h1>Objektbetreuung</h1>
                 <h4 class="sibbi" onclick="closeBetreuung()">< ZURÜCK</h4>
                 <div class="dienstleistungenopen opacityzero">
                     <div class="dienstleistungenopen-text">
-                        <h1>Ihr persönlicher Begleiter</h1>
-                        <p>Sämtliche Aufgaben einer WEG-Verwaltung ergeben sich aus dem Wohnungseigentumsgesetz, der Teilungserklärung sowie den getroffenen Beschlüssen der Eigentümergemeinschaft. Darüber hinaus sind zahlreiche Gerichtsurteile und weitergehende Gesetzestexte zu beachten. Die Verwaltung nach dem Wohnungseigentumsgesetz bezieht sich lediglich auf das gemeinschaftliche Eigentum. Dazu gehören u.a.:</p>
+                        <h1>Der persönliche Begleiter Ihres Objektes</h1>
+                        <p>
+                            Wir betreuen Ihre Objekte und Mieter von der Übernahme bis zur Übergabe ganz sorgenfrei. Gerne
+                            übernehmen wir Ihr Aufgaben und Tätigkeiten als Vermieter, als Ihr Vertreter. Ihr Objekt wie
+                            Wohnungen, Häuser, Unterkünfte so wie Parkflächen werden dauerhaft sauber gehalten und alle
+                            Instandhaltungsaufgaben des Objektes von uns eingehalten dabei sind wir auch in der Lage Ihre
+                            kaufmännischen Aufgaben zu übernehmen um Sie zu entlasten. Zu den Aufgabenbereichen können
+                            auch wöchentliche Rundgänge, Bereitstellung von Mülltonnen, Notfallmaßnahmen bei Brand und
+                            Rohrbruch etc., Terminvereinbarungen mit Handwerkern für deren Wartungs- oder
+                            Reperaturarbeiten gehören
+                            <br><br>Gerne Betreuen wir auch kurzfristig vermietete Objekte wie beispielsweise bei Airbnb. Ihre Kunden
+                            begleiten wir von der Schlüsselübergabe bis zur Schlüsselübernahme, dabei halten wir Ihr Objekt im
+                            Takt.</p>
                     </div>
                     <div class="dienstleistungenopen-icons">
                         <div class="iconsopen">
                             <i class="fa-solid fa-check"></i>
-                            <span>Fensterreinigung&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span>Wohnungen&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         </div>
                         <div class="iconsopen">
                             <i class="fa-solid fa-check"></i>
-                            <span>Aufräumen</span>
+                            <span>Häuser</span>
                         </div>
                         <div class="iconsopen">
                             <i class="fa-solid fa-check"></i>
-                            <span>Treppenhauspflege</span>
+                            <span>Unterkünfte</span>
                         </div>
                         <div class="iconsopen">
                             <i class="fa-solid fa-check"></i>
-                            <span>Kellerreinigung</span>
+                            <span>Parkflächen</span>
                         </div>
                         <div class="iconsopen">
                             <i class="fa-solid fa-check"></i>
-                            <span>Garagenpflege&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span>Anlagen</span>
                         </div>
-                        <div class="iconsopen">
-                            <i class="fa-solid fa-check"></i>
-                            <span>Sonderreinigung</span>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class='dienstleistung-mehr' onclick="openBetreuung()">
@@ -227,124 +240,121 @@
                 <img src="img/1.jpeg" alt="kellerreinigung treppenhauspflege gragenpflege ">
             </div>
             <div class='dienstleistung js-scroll fade-in-bottom'>
-                <h2>02</h2>
+                <h2 style="display: none" >02</h2>
                 <h1>Reinigungsservice</h1>
                 <h4 class="sibbi" onclick="closeReinigung()">< ZURUCK</h4>
-                <div class="dienstleistungenopen opacityzero">
+                <div class="dienstleistungenopen opacityzero" style="margin-top: 10%;">
                     <div class="dienstleistungenopen-text">
-                        <h1>Ihr persönlicher Begleiter</h1>
-                        <p>Sämtliche Aufgaben einer WEG-Verwaltung ergeben sich aus dem Wohnungseigentumsgesetz, der Teilungserklärung sowie den getroffenen Beschlüssen der Eigentümergemeinschaft. Darüber hinaus sind zahlreiche Gerichtsurteile und weitergehende Gesetzestexte zu beachten. Die Verwaltung nach dem Wohnungseigentumsgesetz bezieht sich lediglich auf das gemeinschaftliche Eigentum. Dazu gehören u.a.:</p>
+                        <h1>Professioneller Reinigungsservice</h1>
+                        <p>
+Als Ihr professioneller Partner rund um Reinigungen bieten wir Ihnen eine saubere Leistung! Diverse
+Reinigungsarbeiten, ganz egal ob private oder gewerbliche Objekte, werden von uns übernommen.
+Zuverlässig und flexibel und egal zur welchen Jahreszeit hinterlassen wir alles sauber.
+                        </p>
                     </div>
                     <div class="dienstleistungenopen-icons">
                         <div class="iconsopen">
                             <i class="fa-solid fa-check"></i>
-                            <span>Fensterreinigung&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span>Private Objekte&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         </div>
                         <div class="iconsopen">
                             <i class="fa-solid fa-check"></i>
-                            <span>Aufräumen</span>
+                            <span>Gewerbliche Objekte</span>
                         </div>
                         <div class="iconsopen">
                             <i class="fa-solid fa-check"></i>
-                            <span>Treppenhauspflege</span>
+                            <span>Büroräume</span>
                         </div>
                         <div class="iconsopen">
                             <i class="fa-solid fa-check"></i>
-                            <span>Kellerreinigung</span>
+                            <span>Tankstellen</span>
                         </div>
-                        <div class="iconsopen">
-                            <i class="fa-solid fa-check"></i>
-                            <span>Garagenpflege&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                        </div>
-                        <div class="iconsopen">
-                            <i class="fa-solid fa-check"></i>
-                            <span>Sonderreinigung</span>
-                        </div>
+                        
                     </div>
+                    <div class="dienstleistungenopen-icons">
+                        <div class="iconsopen">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Fensterreinigung</span>
+                        </div>
+                        <div class="iconsopen">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Kehrwochen</span>
+                        </div>
+                        <div class="iconsopen">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Außenanlagen</span>
+                        </div>
+                        <div class="iconsopen">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Winterdienst</span>
+                        </div>
+                        </div>
                 </div>
                 <div class='dienstleistung-mehr' onclick="openReinigung()">
                     <h3>MEHR ERFAHREN</h3>
                         </div>
                 <div class='d-hover'></div>
-                <img src="img/2.jpeg">
+                <img src="img/jason-dent-w3eFhqXjkZE-unsplash.jpg">
             </div>
             <div class='dienstleistung js-scroll fade-in-bottom'>
-                <h2>03</h2>
+                <h2 style="display: none">03</h2>
                 <h1>Hausmeisterservice</h1>
                 <h4 class="sibbi" onclick="closeHaus()">< ZURUCK</h4>
                 <div class="dienstleistungenopen opacityzero">
                     <div class="dienstleistungenopen-text">
-                        <h1>Ihr persönlicher Begleiter</h1>
-                        <p>Sämtliche Aufgaben einer WEG-Verwaltung ergeben sich aus dem Wohnungseigentumsgesetz, der Teilungserklärung sowie den getroffenen Beschlüssen der Eigentümergemeinschaft. Darüber hinaus sind zahlreiche Gerichtsurteile und weitergehende Gesetzestexte zu beachten. Die Verwaltung nach dem Wohnungseigentumsgesetz bezieht sich lediglich auf das gemeinschaftliche Eigentum. Dazu gehören u.a.:</p>
+                        <h1>Zuverlässiges Hausmeisterservice</h1>
+                        <p>Als Ihr Hausmeister oder Hauswart können Sie als Hauseigentümer oder einer Hausverwaltung uns
+                            einsetzen. Wir übernehmen für Sie als Gehilfe des Auftraggebers Aufgaben der Hausverwaltung, -
+                            betreuung und –Überwachung die Aufgaben als Hausmeister die Sie benötigen. Dazu können auch
+                            Gartenarbeiten, Müll-Zusatzentsorgungen, Terminvereinbarungen von Wartungs- oder
+                            Reperaturarbeiten, Notfallmaßnahmen bei Brand, Rohrbruch etc. und viele weitere Aufgaben die wir
+                            gerne für Sie übernehmen können.</p>
                     </div>
-                    <div class="dienstleistungenopen-icons">
-                        <div class="iconsopen">
-                            <i class="fa-solid fa-check"></i>
-                            <span>Fensterreinigung&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                        </div>
-                        <div class="iconsopen">
-                            <i class="fa-solid fa-check"></i>
-                            <span>Aufräumen</span>
-                        </div>
-                        <div class="iconsopen">
-                            <i class="fa-solid fa-check"></i>
-                            <span>Treppenhauspflege</span>
-                        </div>
-                        <div class="iconsopen">
-                            <i class="fa-solid fa-check"></i>
-                            <span>Kellerreinigung</span>
-                        </div>
-                        <div class="iconsopen">
-                            <i class="fa-solid fa-check"></i>
-                            <span>Garagenpflege&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                        </div>
-                        <div class="iconsopen">
-                            <i class="fa-solid fa-check"></i>
-                            <span>Sonderreinigung</span>
-                        </div>
-                    </div>
+            
                 </div>
                 <div class='dienstleistung-mehr' onclick="openHaus()">
                     <h3>MEHR ERFAHREN</h3>
                         </div>
                 <div class='d-hover'></div>
-                <img src="img/3.jpeg">
+                <img src="img/francesca-tosolini-tHkJAMcO3QE-unsplash.jpg">
             </div>
             <div class='dienstleistung js-scroll fade-in-bottom'>
-                <h2>04</h2>
+                <h2 style="display: none;">04</h2>
                 <h1>Vermittlung + Vermietung</h1>
                 <h4 class="sibbi" onclick="closeVer()">< ZURUCK</h4>
                 <div class="dienstleistungenopen opacityzero">
                     <div class="dienstleistungenopen-text">
-                        <h1>Ihr persönlicher Begleiter</h1>
-                        <p>Sämtliche Aufgaben einer WEG-Verwaltung ergeben sich aus dem Wohnungseigentumsgesetz, der Teilungserklärung sowie den getroffenen Beschlüssen der Eigentümergemeinschaft. Darüber hinaus sind zahlreiche Gerichtsurteile und weitergehende Gesetzestexte zu beachten. Die Verwaltung nach dem Wohnungseigentumsgesetz bezieht sich lediglich auf das gemeinschaftliche Eigentum. Dazu gehören u.a.:</p>
+                        <h1>Wir vermieten und vermitteln</h1>
+                        <p>Ganz bequem und effizient! Ganz egal ob Sie als Vermieter ihr Objekt vermieten wollen oder als
+                            Mieter das passende Objekt zur Miete suchen, wir entlasten Sie bei der Suche. Gerne Vermieten wir
+                            ihre Wohnung oder Haus nach ihren Ansprüchen von Mietern. Wir begleiten Ihr Objekt und bieten es
+                            für Sie an und führen auch Besichtigungen durch, am Ende entscheiden Sie! Wenn es schnell gehen
+                            muss können sie sich auch an unseren Bestandkunden bedienen und das ganze kostenlos für den
+                            Vermieter.<br><br>
+                            Sie haben Interesse an einer Miete? Dann sind sie Richtig bei uns. Gerne suchen wir für Sie das
+                            passende Objekt und können sie gerne im Bestand aufnehmen. Innerhalb kürzester Zeit finden wir
+                            für Sie das passende Objekt nach Ihren Kriterien. </p>
                     </div>
+
                     <div class="dienstleistungenopen-icons">
                         <div class="iconsopen">
                             <i class="fa-solid fa-check"></i>
-                            <span>Fensterreinigung&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span>Vermietung von Wohnungen</span>
                         </div>
                         <div class="iconsopen">
                             <i class="fa-solid fa-check"></i>
-                            <span>Aufräumen</span>
+                            <span>Vermietung von Häusern</span>
                         </div>
                         <div class="iconsopen">
                             <i class="fa-solid fa-check"></i>
-                            <span>Treppenhauspflege</span>
+                            <span>Vermietung von Unterkünften</span>
                         </div>
                         <div class="iconsopen">
                             <i class="fa-solid fa-check"></i>
-                            <span>Kellerreinigung</span>
+                            <span>Vermittlung von Mietern und Vermietern</span>
                         </div>
-                        <div class="iconsopen">
-                            <i class="fa-solid fa-check"></i>
-                            <span>Garagenpflege&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         </div>
-                        <div class="iconsopen">
-                            <i class="fa-solid fa-check"></i>
-                            <span>Sonderreinigung</span>
-                        </div>
-                    </div>
+                
                 </div>
                 <div class='dienstleistung-mehr' onclick="openVer()">
                 <h3>MEHR ERFAHREN</h3>
@@ -387,7 +397,7 @@
         </div>
         <div class="kontakt-behalt">
             <form action="https://aksmails.herokuapp.com/home" method="post">
-            <div class="kontakt-cont">
+            <div class="kontakt-cont bordercont">
             <div class="kontakt-input">
                 <input type="text" name="yourname" class="teleinput" required>
                 <div class="kontakt-placeholder">Name</div>
@@ -404,7 +414,7 @@
                 <select required>
                     <option disabled selected value>Dienstleistung</option>
                     <option value="1">Objektbetreuung</option>
-                    <option value="2">Fensterreinigung</option>
+                    <option value="2">Reinigungsservice</option>
                     <option value="3">Hausmeisterservice</option>
                     <option value="4">Immobilienvermittlung</option>
                   </select>
@@ -426,12 +436,13 @@
         <div class="kontakt-cont" style="justify-content: center;">
             <div class="kontaktsocials">
                 <i class="fa-solid fa-phone"></i>
-                <span style="text-decoration: none !important; color: white !important;">0711 872 738</span>
+                <a style="text-decoration: none !important; color: white !important; font-weight: 400" href="Tel:+4915209184732">01520 918 4732</a>
             </div>
             <div class="kontaktsocials">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://www.instagram.com/aks.immobiliendienstleistungen/?igshid=YmMyMTA2M2Y%3D"><i class="fa-brands fa-instagram hoverin">
+                </i></a>
+                <a href="https://wa.me/015209184732"><i class="fa-brands fa-whatsapp hoverwa">
+                </i></a>
             </div>
             <div class="kontaktsocials">
                 <i class="fa-solid fa-location-dot"></i>
@@ -455,16 +466,16 @@
     </div>
 
     <div class='footer'>
-        <img src="img/7bd6eb36-4757-4f8c-b7d0-c6b4e2a0b92f (1) (1).png" class="logofooter" alt="AKS Immobilien">
+        <a href="index.html"><img src="img/7bd6eb36-4757-4f8c-b7d0-c6b4e2a0b92f (1) (1).png" class="logofooter" alt="AKS Immobilien"></a>
         <div class="expert">Mit viel &#10084; <br>Ihr AKS Team</div>
         <div class="footer-content">
             <div class="footer-menu">
                 <a href="agbs.html">AGBs</a>
-                <a href="agbs.html">Impressum</a>
-                <a href="agbs.html">Datenschutz</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
             </div>
             <div class="footer-credits">
-                © 2022 AKS Immobilien
+                © 2022 AKS Immobiliendienstleistungen
             </div>
         </div>
     </div>
@@ -472,6 +483,38 @@
 </body>
 
 <script>
+
+window.addEventListener('click', function(e){   
+  if (document.getElementsByClassName('opennavbar')[0].contains(e.target) || document.getElementsByClassName('navbarz')[0].contains(e.target)){
+    // Clicked in box
+  } else{
+    lowernav = document.getElementsByClassName('opennavbar')[0];
+    lowernav.style.width = '0';
+        lowernav.style.opacity = '0';
+        lowernav.style.transition = '0.5s';
+        baropened = 0;
+  }
+});
+
+$(".beauftragen").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".kontakt").offset().top},
+        'slow');
+});
+
+$(".uberunsclick").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".uberuns").offset().top},
+        'slow');
+        console.log('clicked');
+});
+
+$(".dienstclick").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".dienstleistungen-cont").offset().top},
+        'slow');
+        console.log('clicked');
+});
 
     var carousel = document.querySelector('.carousel');
 var cellCount = 9;

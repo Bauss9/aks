@@ -25,8 +25,6 @@ window.onscroll = function(e){
 }
 
 
-
-
 function openbar(){
 
     if (baropened == 0){
